@@ -7,7 +7,7 @@ class BookersController < ApplicationController
   def create
     booker=Booker.new(booker_params)
     booker.save
-    redirect_to '/top'
+    redirect_to booker_path(booker.id)
   end
 
   def index
