@@ -2,8 +2,11 @@
 
 <%@books.each do |book|%>
 
- <p>タイトル</p> 
+ <p>Title</p> 
  <span><%=book.title%></span>
+<%=link_to"Show",book_path(book.id)  %>
+<%=link_to"Edit",edit_book_path(book.id) %>
+<%=link_to"Destroy",book_path(book.id) ,method: :delete,"data-confirm"=>"Are you sure?" %>
 <%end%>
 
 <h1>New book</h1>
