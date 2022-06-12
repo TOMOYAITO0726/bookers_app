@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
-  # get 'bookers/new'
-  get 'bookers/new'=>'bookers#new'
-  post'bookers'=>'bookers#create'
-  get 'bookers'=>'bookers#index'
   get 'top'=>'homes#top'
-  get'bookers/:id'=>'bookers#show'
-  get 'bookers/:id/edit'=>'bookers#edit'
-  patch'bookers/:id'=>'bookers#update',as: :'booker'
+  # get 'books/new'
+  #get 'books/new'=>'books#new'
+  #post'books'=>'books#create'
+  #get 'books'=>'books#index'
+  #get'book/:id'=>'books#show'#,as: 'booker'
+  #get 'books/:id/edit'=>'books#edit'
+  #patch'books/:id'=>'books#update'#,as: 'booker'
+  resources :books
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end 
