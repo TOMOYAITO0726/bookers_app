@@ -30,18 +30,7 @@ body{
     line-height: 18px;
     margin: 33px;
 }
-table {
-    display: table;
-    border-collapse: separate;
-    box-sizing: border-box;
-    text-indent: initial;
-    border-spacing: 2px;
-    border-color: grey;
-}
+
 p{
-  display: table-cell;
-    vertical-align: inherit;
-    font-weight: bold;
-    text-align: -internal-center;
-}
+  margin:33px;
 }
