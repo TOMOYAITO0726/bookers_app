@@ -3,9 +3,9 @@
 <% end %>
  
 
-<h2>Title</h2>
-<p><%=@book.title%></p>
 
+<p>Title:<%=@book.title%></p>
+<p>Body:<%=@book.body%></p>
 <span>
 <%=link_to"Edit",edit_book_path(@book.id) %>  
 </span>
